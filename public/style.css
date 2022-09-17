@@ -6,11 +6,11 @@ h3 {
     font-size: 20px;
 }
 
-input[name = "bottles"] {
+select[name = "bottles"] {
     width: 60px;
 }
 
-input[name = "time"] {
+select[name = "time"] {
     width: 60px;
 }
 

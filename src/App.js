@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-  const [weight, setWeight] = useState()
-  const [bottles, setBottles] = useState()
-  const [time, setTime] = useState()
+  const [weight, setWeight] = useState(89)
+  const [bottles, setBottles] = useState(1)
+  const [time, setTime] = useState(1)
   const [gender, setGender] = useState('male')
   const [result, setResult] = useState(0)
 
@@ -35,15 +35,29 @@ function App() {
       <h3>Calculating alcohol blood level</h3>
     <div>
       <label>Weight</label>
-      <input type = "text" name ="weight" value = {weight} onChange = {e => setWeight(e.target.value)}/>
+      <input type = "number" name ="weight" value = {weight} onChange = {e => setWeight(e.target.value)}/>
     </div>
     <div>
       <label>Bottles</label>
-      <input type = "number" min = "0" name ="bottles" value = {bottles} onChange = {e => setBottles(e.target.value)}/>
+      <select name = "bottles" value = {bottles} onChange = {e => setBottles(e.target.value)}>
+      <option value = "1">1</option>
+      <option value = "2">2</option>
+      <option value = "3">3</option>
+      <option value = "4">4</option>
+      <option value = "5">5</option>
+      <option value = "6">6</option>
+      </select>
     </div>
     <div>
       <label>Time</label>
-      <input type = "number" min = "0" name ="time" value = {time} onChange = {e => setTime(e.target.value)}/>
+      <select name = "time" value = {time} onChange = {e => setTime(e.target.value)}>
+      <option value = "1">1</option>
+      <option value = "2">2</option>
+      <option value = "3">3</option>
+      <option value = "4">4</option>
+      <option value = "5">5</option>
+      <option value = "6">6</option>
+      </select>
     </div>
     <div>
       <label>Gender</label>
