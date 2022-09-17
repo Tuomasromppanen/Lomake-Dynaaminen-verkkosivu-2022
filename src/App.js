@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const [weight, setWeight] = useState(89)
-  const [bottles, setBottles] = useState(1)
+  const [bottles, setBottles] = useState(3)
   const [time, setTime] = useState(1)
   const [gender, setGender] = useState('male')
   const [result, setResult] = useState(0)
